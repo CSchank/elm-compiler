@@ -47,6 +47,7 @@ Executable elm
         builder/src
         terminal/impl
         terminal/src
+        teasync/src
 
     other-extensions:
         TemplateHaskell
@@ -202,10 +203,13 @@ Executable elm
         Type.UnionFind
         Paths_elm
 
+        -- from teasync/
+        AnalyzeTypes
+
     Build-depends:
         ansi-terminal-types,
         ansi-wl-pprint,
-        base >=4.17 && < 5,
+        base >=4.16 && < 5,
         binary,
         bytestring,
         containers,
