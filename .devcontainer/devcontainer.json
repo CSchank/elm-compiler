@@ -6,7 +6,7 @@
 	},
 
 	"updateContentCommand": {
-	  "Install GHCUP": "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.2.7 BOOTSTRAP_HASKELL_INSTALL_HLS=1q curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh"
+	  "Install GHCUP": "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.2.7 BOOTSTRAP_HASKELL_INSTALL_HLS=1 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh"
 	},
 
 	"containerEnv": {
