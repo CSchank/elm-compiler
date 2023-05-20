@@ -52,6 +52,7 @@ import qualified System.Console.ANSI.Types as Ansi
 import qualified System.Info as Info
 import System.IO (Handle)
 import qualified Text.PrettyPrint.ANSI.Leijen as P
+import qualified Prettyprinter as P (SimpleDocStream(..))
 
 import qualified Data.Index as Index
 import qualified Elm.Package as Pkg
@@ -59,6 +60,8 @@ import qualified Elm.Version as V
 import Json.Encode ((==>))
 import qualified Json.Encode as E
 import qualified Json.String as Json
+
+import qualified Data.Text as Text
 
 
 
@@ -321,13 +324,13 @@ toJsonHelp style revChunks simpleDoc =
       toJsonHelp style ([char] : revChunks) rest
 
     P.SText _ string rest ->
-      toJsonHelp style (string : revChunks) rest
+      toJsonHelp style (Text.unpack string : revChunks) rest
 
     P.SLine indent rest ->
       toJsonHelp style (replicate indent ' ' : "\n" : revChunks) rest
 
-    P.SSGR sgrs rest ->
-      encodeChunks style revChunks : toJsonHelp (sgrToStyle sgrs style) [] rest
+    --P.SSGR sgrs rest ->
+    --  encodeChunks style revChunks : toJsonHelp (sgrToStyle sgrs style) [] rest
 
 
 sgrToStyle :: [Ansi.SGR] -> Style -> Style

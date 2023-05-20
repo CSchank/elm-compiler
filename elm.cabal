@@ -202,13 +202,8 @@ Executable elm
         Type.Unify
         Type.UnionFind
         Paths_elm
-
-        -- from teasync/
-        AnalyzeTypes
-
     Build-depends:
         ansi-terminal-types,
-        ansi-wl-pprint,
         base >=4.16 && < 5,
         binary,
         bytestring,
@@ -227,6 +222,8 @@ Executable elm
         language-glsl,
         mtl,
         parsec,
+        prettyprinter,
+        prettyprinter-compat-ansi-wl-pprint,
         process,
         raw-strings-qq,
         scientific,
@@ -234,6 +231,7 @@ Executable elm
         snap-core,
         snap-server,
         template-haskell,
+        text,
         time,
         unordered-containers,
         utf8-string,
