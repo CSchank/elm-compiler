@@ -40,16 +40,6 @@
   (major1) == 0 && (major2) <  11 || \
   (major1) == 0 && (major2) == 11 && (minor) <= 5)
 #endif /* MIN_VERSION_ansi_terminal_types */
-/* package ansi-wl-pprint-0.6.9 */
-#ifndef VERSION_ansi_wl_pprint
-#define VERSION_ansi_wl_pprint "0.6.9"
-#endif /* VERSION_ansi_wl_pprint */
-#ifndef MIN_VERSION_ansi_wl_pprint
-#define MIN_VERSION_ansi_wl_pprint(major1,major2,minor) (\
-  (major1) <  0 || \
-  (major1) == 0 && (major2) <  6 || \
-  (major1) == 0 && (major2) == 6 && (minor) <= 9)
-#endif /* MIN_VERSION_ansi_wl_pprint */
 /* package base-4.16.4.0 */
 #ifndef VERSION_base
 #define VERSION_base "4.16.4.0"
@@ -220,6 +210,26 @@
   (major1) == 3 && (major2) <  1 || \
   (major1) == 3 && (major2) == 1 && (minor) <= 15)
 #endif /* MIN_VERSION_parsec */
+/* package prettyprinter-1.7.1 */
+#ifndef VERSION_prettyprinter
+#define VERSION_prettyprinter "1.7.1"
+#endif /* VERSION_prettyprinter */
+#ifndef MIN_VERSION_prettyprinter
+#define MIN_VERSION_prettyprinter(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  7 || \
+  (major1) == 1 && (major2) == 7 && (minor) <= 1)
+#endif /* MIN_VERSION_prettyprinter */
+/* package prettyprinter-compat-ansi-wl-pprint-1.0.2 */
+#ifndef VERSION_prettyprinter_compat_ansi_wl_pprint
+#define VERSION_prettyprinter_compat_ansi_wl_pprint "1.0.2"
+#endif /* VERSION_prettyprinter_compat_ansi_wl_pprint */
+#ifndef MIN_VERSION_prettyprinter_compat_ansi_wl_pprint
+#define MIN_VERSION_prettyprinter_compat_ansi_wl_pprint(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  0 || \
+  (major1) == 1 && (major2) == 0 && (minor) <= 2)
+#endif /* MIN_VERSION_prettyprinter_compat_ansi_wl_pprint */
 /* package process-1.6.16.0 */
 #ifndef VERSION_process
 #define VERSION_process "1.6.16.0"
@@ -280,6 +290,16 @@
   (major1) == 2 && (major2) <  18 || \
   (major1) == 2 && (major2) == 18 && (minor) <= 0)
 #endif /* MIN_VERSION_template_haskell */
+/* package text-1.2.5.0 */
+#ifndef VERSION_text
+#define VERSION_text "1.2.5.0"
+#endif /* VERSION_text */
+#ifndef MIN_VERSION_text
+#define MIN_VERSION_text(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  2 || \
+  (major1) == 1 && (major2) == 2 && (minor) <= 5)
+#endif /* MIN_VERSION_text */
 /* package time-1.11.1.1 */
 #ifndef VERSION_time
 #define VERSION_time "1.11.1.1"
